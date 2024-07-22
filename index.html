@@ -1,15 +1,15 @@
 <div style="background-position: center center; background-image: url('img/titlepic.jpg'); background-size: cover; width: 100%; color: white; text-align: center; padding: 100px 0;">
-  <h1>Leveraging Partial Symmetry for Multi-Agent Reinforcement Learning</h1>
-  <h3 style="font-style: italic;">Xin Yu, Rongye Shi*, Pu Feng, Yongkai Tian, Simin Li, Shuhao Liao, Wenjun Wu</h3>
-  <p>The 38th Annual AAAI Conference on Artificial Intelligence (AAAI 2024)</p>
-  <p><span><a href="./pdf/PSE.pdf" style="color: white; text-decoration: underline;">[Paper]</a></span>&nbsp;&nbsp;&nbsp;<span><a href="./pdf/sup.pdf" style="color: white; text-decoration: underline;">[Supplementary]</a></span></p>
+  <h1>Exploiting Hierarchical Symmetry in Multi-Agent Reinforcement Learning</h1>
+  <h3 style="font-style: italic;">Yongkai TIAN, Xin Yu, Yirong Qi, Li Wang, Pu Feng, Wenjun Wu, Rongye Shi, Jie Luo*</h3>
+  <p>The 27TH EUROPEAN CONFERENCE ON ARTIFICIAL INTELLIGENCE (ECAI 2024)</p>
+  <p><span><a href="./pdf/hepn.pdf" style="color: white; text-decoration: underline;">[Paper]</a></span>&nbsp;&nbsp;&nbsp;<span><a href="./pdf/sup.pdf" style="color: white; text-decoration: underline;">[Supplementary]</a></span></p>
 </div>
 
 <div style="width: 70%; margin: auto;">
   <h2 style="text-align: left;">Abstract</h2>
-  <p style="font-style: italic; font-size: 1.2em; line-height: 1.3;">Incorporating symmetry as an inductive bias into multi-agent reinforcement learning (MARL) has led to improvements in generalization, data efficiency, and physical consistency. While prior research has succeeded in using perfect symmetry prior, the realm of partial symmetry in the multi-agent domain remains unexplored. To fill in this gap, we introduce the partially symmetric Markov game, a new subclass of the Markov game. We then theoretically show that the performance error introduced by utilizing symmetry in MARL is bounded, implying that the symmetry prior can still be useful in MARL even in partial symmetry situations. Motivated by this insight, we propose the Partial Symmetry Exploitation (PSE) framework that is able to adaptively incorporate symmetry prior in MARL under different symmetry-breaking conditions. Specifically, by adaptively adjusting the exploitation of symmetry, our framework is able to achieve superior sample efficiency and overall performance of MARL algorithms. Extensive experiments are conducted to demonstrate the superior performance of the proposed framework over baselines. Finally, we implement the proposed framework in real-world multi-robot testbed to show its superiority.</p>
+  <p style="font-style: italic; font-size: 1.2em; line-height: 1.3;">Achieving high sample efficiency is a critical research area in reinforcement learning. This becomes extremely difficult in multi-agent reinforcement learning (MARL), as the capacity of the joint state and action space grows exponentially with the number of agents. The reliance of MARL solely on exploration and trial-and-error, without incorporating prior knowledge, exacerbates the issue of low sample efficiency. Currently, introducing symmetry into MARL is an effective approach to address this issue. Yet the concept of hierarchical symmetry, which maintains symmetry across different levels of a multi-agent system (MAS), has not been explored in existing methods. This paper focuses on multi-agent cooperative tasks and proposes a method incorporating hierarchical symmetry, termed the Hierarchical Equivariant Policy Network (HEPN) which is $O(n)$-equivariant. Specifically, HEPN utilizes clustering to perform hierarchical information extraction in MAS, and employs graph neural networks to model agent interactions. We conducted extensive experiments across various multi-agent tasks. The results indicate that our method achieves faster convergence speeds and higher convergence rewards compared to baseline algorithms. Additionally, we have deployed our algorithm in a physical multi-robot system, confirming its effectiveness in real-world environments.</p>
 
-  <h2 style="text-align: left;">Videos</h2>
+  <!-- <h2 style="text-align: left;">Videos</h2>
   <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 5px; justify-items: center;">
     <div>
       <iframe src="//player.bilibili.com/player.html?bvid=BV1nj411W7bE&page=1" style="width: 600px; height: 380px;" frameborder="0" allowfullscreen="true"></iframe>
@@ -29,7 +29,7 @@
       <iframe src="//player.bilibili.com/player.html?bvid=BV1NG411Y7Zq&page=1" style="width: 600px; height: 380px;" frameborder="0" allowfullscreen="true"></iframe>
       <p style="width: 550px; text-align: center;">MAPPO-PSE</p>
     </div>
-  </div>
+  </div> -->
 
 
 <!-- 
@@ -41,7 +41,7 @@
   <p>Coming soon.</p> -->
 
   <h2 style="text-align: left;">Contact</h2>
-  <p>If you have any questions, please feel free to contact <a href="https://xjtueryx.github.io">Xin Yu</a> at nlsdeyuxin[at]buaa[dot]edu[dot]cn[dot].</p>
+  <p>If you have any questions, please feel free to contact <a href="https://Yongkai-Tian.github.io">Yongkai Tian</a> at tianyk[at]buaa[dot]edu[dot]cn[dot].</p>
 </div>
 
 
