@@ -2,52 +2,31 @@
   <h1>Exploiting Hierarchical Symmetry in Multi-Agent Reinforcement Learning</h1>
   <h3 style="font-style: italic;">Yongkai TIAN, Xin Yu, Yirong Qi, Li Wang, Pu Feng, Wenjun Wu, Rongye Shi, Jie Luo*</h3>
   <p>The 27TH EUROPEAN CONFERENCE ON ARTIFICIAL INTELLIGENCE (ECAI 2024)</p>
-  <p><span><a href="./pdf/hepn.pdf" style="color: white; text-decoration: underline;">[Paper]</a></span>&nbsp;&nbsp;&nbsp;<span><a href="./pdf/sup.pdf" style="color: white; text-decoration: underline;">[Supplementary]</a></span></p>
+  <p><span><a href="" style="color: white; text-decoration: underline;">[Paper]</a></span>&nbsp;&nbsp;&nbsp;<span><a href="" style="color: white; text-decoration: underline;">[Supplementary]</a></span></p>
 </div>
 
 <div style="width: 70%; margin: auto;">
   <h2 style="text-align: left;">Abstract</h2>
   <p style="font-style: italic; font-size: 1.2em; line-height: 1.3;">Achieving high sample efficiency is a critical research area in reinforcement learning. This becomes extremely difficult in multi-agent reinforcement learning (MARL), as the capacity of the joint state and action space grows exponentially with the number of agents. The reliance of MARL solely on exploration and trial-and-error, without incorporating prior knowledge, exacerbates the issue of low sample efficiency. Currently, introducing symmetry into MARL is an effective approach to address this issue. Yet the concept of hierarchical symmetry, which maintains symmetry across different levels of a multi-agent system (MAS), has not been explored in existing methods. This paper focuses on multi-agent cooperative tasks and proposes a method incorporating hierarchical symmetry, termed the Hierarchical Equivariant Policy Network (HEPN) which is $O(n)$-equivariant. Specifically, HEPN utilizes clustering to perform hierarchical information extraction in MAS, and employs graph neural networks to model agent interactions. We conducted extensive experiments across various multi-agent tasks. The results indicate that our method achieves faster convergence speeds and higher convergence rewards compared to baseline algorithms. Additionally, we have deployed our algorithm in a physical multi-robot system, confirming its effectiveness in real-world environments.</p>
 
-  <!-- <h2 style="text-align: left;">Videos</h2>
-  <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 5px; justify-items: center;">
-    <div>
-      <iframe src="//player.bilibili.com/player.html?bvid=BV1nj411W7bE&page=1" style="width: 600px; height: 380px;" frameborder="0" allowfullscreen="true"></iframe>
-      <p style="width: 550px; text-align: center;">MAPPO </p>
+  <h2 style="text-align: left;">Methods</h2>
+  <!-- <p style="font-size: 1.5em; line-height: 1.5;">
+    Multi-agent systems (MAS) can naturally be constructed as a graph structure, where similar agents can be clustered into high-level nodes to form a high-level system. In the high-level system, more efficient message passing can be achieved, resulting in more reasonable actions. Symmetry exists in both high-level and low-level systems, which is the hierarchical symmetry in MAS. This paper focuses on leveraging the intrinsic hierarchical symmetry in multi-agent systems to improve the sample efficiency of MARL. We proposed a novel policy network named the Hierarchical Equivariant Policy Network (HEPN), and its framework is shown below:
+  </p> -->
+  <div style="display: flex;">
+    <div style="flex: 1; margin-right: 20px;">
+      <img src="img/hierarchy2.png" alt="Method Image" style="max-width: 100%; height: auto;">
     </div>
-    <div>
-      <iframe src="//player.bilibili.com/player.html?bvid=BV1wW4y1F7xf&page=1" style="width: 600px; height: 380px;" frameborder="0" allowfullscreen="true"></iframe>
-      <p style="width: 550px; text-align: center;">MAPPO-PSE</p>
+    <div style="flex: 1;">
+      <p style="font-size: 1.2em; line-height: 1.5;">
+        Multi-agent systems (MAS) can naturally be constructed as a graph structure, where similar agents can be clustered into high-level nodes to form a high-level system. In the high-level system, more efficient message passing can be achieved, resulting in more reasonable actions. As shown in the left figure, symmetry exists in both high-level and low-level systems (Rotating a system, whether at low or high level, the actions of agents also rotate.), which is the hierarchical symmetry in MAS. This paper focuses on leveraging the intrinsic hierarchical symmetry in multi-agent systems to improve the sample efficiency of MARL. We proposed a novel policy network named the Hierarchical Equivariant Policy Network (HEPN), and its framework is shown below:
+      </p>
     </div>
-  
-    <div>
-      <iframe src="//player.bilibili.com/player.html?bvid=BV1ug4y1C7gU&page=1" style="width: 600px; height: 380px;" frameborder="0" allowfullscreen="true"></iframe>
-      <p style="width: 550px; text-align: center;">MAPPO</p>
-    </div>
-    
-    <div>
-      <iframe src="//player.bilibili.com/player.html?bvid=BV1NG411Y7Zq&page=1" style="width: 600px; height: 380px;" frameborder="0" allowfullscreen="true"></iframe>
-      <p style="width: 550px; text-align: center;">MAPPO-PSE</p>
-    </div>
-  </div> -->
-
-
-<!-- 
-
-  <h2 style="text-align: left;">Code</h2>
-  <p>Coming soon.</p>
-
-  <h2 style="text-align: left;">Citation</h2>
-  <p>Coming soon.</p> -->
+  </div>
+  <div style="width: 100%; text-align: center; padding: 50px 0;">
+    <img src='img/Framework1.png' alt="Framework Image" style="max-width: 100%; height: auto;">
+  </div>
 
   <h2 style="text-align: left;">Contact</h2>
   <p>If you have any questions, please feel free to contact <a href="https://Yongkai-Tian.github.io">Yongkai Tian</a> at tianyk[at]buaa[dot]edu[dot]cn[dot].</p>
 </div>
-
-
-
-
-
-
-
-
